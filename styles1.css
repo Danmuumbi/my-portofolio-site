@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#hero {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    /* height: auto; */
+    height: 350px;
+    border-radius: 10px;
+}
+
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px; /* Add margin-bottom to ensure spacing between cards */
+}
+
+.skill-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
+    border-radius: 10px 10px 0 0;
+}
+
+.skill-card h3 {
+    margin-top: 15px;
+}
+
+.skill-card p {
+    height: 60px; /* Set a fixed height for descriptions */
+    overflow: hidden; /* Ensures text overflow is hidden */
+}
+
+.skill-card:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#skills h2 {
+    margin-bottom: 30px; /* Add margin-bottom to ensure spacing below the section title */
+}
+
+
+#testimonials .carousel-item {
+    margin-bottom: 30px;
+}
+
+#testimonials .carousel-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.project-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.project-card a.btn {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+footer a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: #f8f9fa;
+  }
+  
+
+  #updates {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#updates h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #343a40;
+}
+
+.update-card {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.update-card .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.update-card .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.update-card .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.update-card .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.update-card .card-body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.update-card .card-title {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.update-card .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.update-card .btn {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.update-card .btn:hover {
+    background-color: #0056b3;
+}
