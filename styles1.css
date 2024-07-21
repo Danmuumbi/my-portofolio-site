@@ -105,7 +105,6 @@ body {
 /* #skills h2 {
     margin-bottom: 30px;
 } */
-
 #skills h2 {
     margin-bottom: 30px; /* Add margin-bottom to ensure spacing below the section title */
 }
@@ -115,25 +114,25 @@ body {
     height: auto;
 }
 
-@media (max-width: 576px) {
-    .skill-card {
-        padding: 1rem;
-    }
-    
-    .skill-card h3 {
-        font-size: 1.25rem;
-    }
-    
-    .skill-card p {
-        font-size: 1rem;
-    }
-    
-    .btn {
-        font-size: 1rem;
-        padding: 0.75rem 1.25rem;
-    }
+.skill-card {
+    padding: 15px; /* Adjust padding for better spacing */
+    margin-bottom: 15px; /* Add margin bottom to ensure spacing between cards */
 }
 
+@media (max-width: 576px) {
+    .skill-card h3 {
+        font-size: 1.5rem; /* Adjust font size for better readability on small screens */
+    }
+
+    .skill-card p {
+        font-size: 1rem; /* Adjust paragraph font size for better readability on small screens */
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem; /* Adjust button padding for better touch target on small screens */
+    }
+}
 
 
 #testimonials .carousel-item {
