@@ -102,20 +102,38 @@ body {
     transform: scale(1.05);
 }
 
+/* #skills h2 {
+    margin-bottom: 30px;
+} */
+
 #skills h2 {
     margin-bottom: 30px; /* Add margin-bottom to ensure spacing below the section title */
 }
 
-
-/* #testimonials .carousel-item {
-    margin-bottom: 30px;
+.skill-card img {
+    max-width: 100%;
+    height: auto;
 }
 
-#testimonials .carousel-item img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-} */
+@media (max-width: 576px) {
+    .skill-card {
+        padding: 1rem;
+    }
+    
+    .skill-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .skill-card p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+}
+
 
 
 #testimonials .carousel-item {
