@@ -33,7 +33,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/muuomuumbi/my-portofolio-site.git
 Navigate to the project directory:
 
 bash
@@ -50,9 +50,8 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 Contact
 Feel free to reach out to me through the following channels:
 
-Email: your-email@example.com
-LinkedIn: Your LinkedIn
-GitHub: Your GitHub
+Email: muuomuumbi@gmail.com
+LinkedIn: https://www.linkedin.com/notifications/?filter=all
 Thank you for visiting my portfolio website! find the deployed site here https://candid-melba-8d9a83.netlify.app/
 
 
