@@ -6,411 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Muuo Muumbi - Software Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylep.css">
+    <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <style>
-:root {
-    /* Light Mode Colors */
-    /* --bg-color: cyan; */
-    /* --bg-color: radial-gradient(circle, cyan, blue); */
-    --bg-color: radial-gradient(circle,goldenrod, cyan);
-    --text-color: #333;
-    --primary-color: #f0a500;
-    --secondary-color: #1c2e4a;
-    --hero-bg: url('https://loveincorporated.blob.core.windows.net/contentimages/gallery/03211459-0607-4d07-8a6c-9966e3820a7d-Mount-Kirkjufell-Iceland.jpg');
-}
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-[data-theme="dark"] {
-    /* Dark Mode Colors */
-    --bg-color: #333;
-    --text-color: #f8f9fa;
-    --primary-color: #f0a500;
-    --secondary-color: #1c2e4a;
-    --hero-bg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://loveincorporated.blob.core.windows.net/contentimages/gallery/03211459-0607-4d07-8a6c-9966e3820a7d-Mount-Kirkjufell-Iceland.jpg');
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    background: var(--bg-color);
-}
-
-/* Header */
-.header {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
-    height: 70px;
-    align-items: center;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.navbar-nav .nav-link {
-    color: #fff;
-    margin-right: 15px;
-    font-size: 1rem;
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--primary-color);
-}
-
-.hero {
-    height: 100vh;
-    background: goldenrod !important;
-    position: relative;
-    overflow: hidden;
-    color: #fff; /* Ensures text is readable on goldenrod background */
-}
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    height: calc(100% - 100px); /* Adjust height to accommodate the stats section */
-    width: 100%;
-    position: relative;
-}
-
-.hero-text {
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-    width: 50%;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.hero-text .btn-primary {
-    background-color: #007bff; /* Bootstrap primary color */
-    border-color: #007bff;
-}
-
-.hero-image {
-    position: relative;
-    width: 50%;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 90%);
-}
-
-/* Slanted Divider */
-.hero-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 90%);
-    z-index: 1;
-}
-
-/* Stats Section */
-.hero-stats {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    background: #fff;
-    color: #000; /* Ensures text is readable on white background */
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-item h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.stat-item p {
-    font-size: 1rem;
-    margin: 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-        height: auto; /* Allow height to adjust for smaller screens */
-    }
-
-    .hero-text,
-    .hero-image {
-        width: 100%;
-    }
-
-    .hero-image img {
-        height: auto;
-    }
-
-    .hero-container::before {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .hero-stats {
-        flex-direction: column;
-    }
-}
-
-
-
-/* Skills Section */
-.skills-section {
-    background-color: var(--bg-color);
-    padding: 60px 0;
-}
-
-.skill-card {
-    text-align: center;
-    background-color: #f0f0f0; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card i {
-    color: #007bff;
-}
-
-.skill-card h4 {
-    font-size: 1.25rem;
-    margin-top: 15px;
-}
-
-/* Experience Section */
-.experience-section {
-    background-color: var(--bg-color);
-    padding: 60px 0;
-}
-
-.experience-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.experience-section p {
-    margin-bottom: 0;
-}
-
-/* Projects Section */
-.projects-section {
-    background-color: var(--bg-color);
-    padding: 60px 0;
-}
-
-.projects-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Education Section */
-.education-section {
-    background-color: var(--bg-color);
-    padding: 60px 0;
-}
-
-.education-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
-.contact-section {
-    background-color: var(--primary-color);
-    padding: 60px 0;
-    color: #ffffff;
-}
-
-.contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-section .btn-primary {
-    background-color: #333;
-    border-color: #333;
-}
-
-/* Footer Styles */
-.footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 40px 0;
-}
-
-.footer h5 {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.footer p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.footer ul li a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.footer ul li a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-.footer .btn-outline-light {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-}
-
-.footer .btn-outline-light:hover {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.footer .fab {
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-
-.footer .fab:hover {
-    color: var(--primary-color);
-}
-
-/* Modal Styles */
-.modal-content {
-    border-radius: 10px;
-}
-
-.modal-header {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.modal-header .btn-close {
-    background-color: #fff;
-}
-
-
-.navbar-brand {
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: white; /* Default icon color */
-    display: flex;
-    gap: 0.5rem; /* Space between icons */
-    align-items: center; /* Center icons vertically */
-    text-decoration: none;
-}
-
-.navbar-brand i {
-    transition: color 0.3s ease;
-}
-
-.navbar-brand i:hover {
-    color: #007bff; /* Change to your hover color */
-}
-
-
-
-
-#roles-section {
-    background: linear-gradient(to right, #007bff, #6610f2); /* Gradient background */
-    color: #fff;
-    padding: 60px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-#roles-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 200%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    transform: rotate(25deg);
-    z-index: 0;
-}
-
-#roles-section h2 {
-    font-size: 2.5rem;
-    z-index: 1;
-}
-
-#roles-section .role h3 {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    z-index: 1;
-}
-
-#roles-section .role p {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    z-index: 1;
-}
-
-#roles-section img {
-    max-width: 100%;
-    border: 10px solid rgba(255, 255, 255, 0.2);
-    z-index: 1;
-}
-
-#roles-section .image-wrapper {
-    position: relative;
-    z-index: 1;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-#roles-section .roles-content {
-    position: relative;
-    z-index: 1;
-}
-
-#roles-section .btn {
-    z-index: 1;
-    transition: all 0.3s ease;
-}
-
-#roles-section .btn:hover {
-    background: #fff;
-    color: #007bff;
-}
-
-
-
-
-    </style>
 </head>
 
 <body>
@@ -462,6 +61,7 @@ body {
     </header>
 
 <section class="hero">
+    <div id="particles-js"></div> <!-- Add this line -->
     <div class="hero-container">
         <div class="hero-text">
             <h1 class="display-3">Crafting Digital Excellence</h1>
@@ -487,6 +87,7 @@ body {
         </div>
     </div>
 </section>
+
 
 
 
@@ -558,7 +159,7 @@ body {
         </div>
     </section>
 
-    <hr style="width: 100%; height: 5px; border: none; background-color: white;">
+   
 
     <!-- Experience Section -->
     <section id="experience" class="experience-section py-5">
@@ -579,7 +180,7 @@ body {
         </div>
     </section>
 
-    <hr style="width: 100%; height: 5px; border: none; background-color: white;">
+   
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section py-5">
@@ -600,7 +201,7 @@ body {
         </div>
     </section>
 
-    <hr style="width: 100%; height: 5px; border: none; background-color: white;">
+   
 
     <!-- Education Section -->
     <section id="education" class="education-section py-5">
@@ -730,59 +331,10 @@ body {
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        document.getElementById('toggle-mode').addEventListener('click', function () {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-        });
-    </script>
+    <script></script>
 
 
-<script>
-        
-    document.addEventListener('DOMContentLoaded', function() {
-emailjs.init('tpyeDzJAncG7r0k5K'); // Replace with your EmailJS user ID
-
-const contactForm = document.querySelector('#contactModal form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const formData = {
-            name: document.getElementById('contactName').value,
-            email: document.getElementById('contactEmail').value,
-            message: document.getElementById('contactMessage').value
-        };
-
-        console.log('Form Data:', formData);
-
-        emailjs.send('service_6imkfkm', 'template_5e7ps5d', formData)
-            .then((response) => {
-                console.log('EmailJS response:', response);
-                if (response.status === 200) {
-                    alert('Message sent successfully!');
-                    contactForm.reset();
-                    const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
-                    if (modal) {
-                        modal.hide();
-                    }
-                } else {
-                    alert('There was an error sending your message. Please try again.');
-                }
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('There was an error sending your message. Please try again.');
-            });
-    });
-} else {
-    console.error('Contact form not found');
-}
-});
-
-</script>
+<script src="scripts1.js"></script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </body>
