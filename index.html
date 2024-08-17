@@ -337,6 +337,77 @@ body {
 }
 
 
+
+
+#roles-section {
+    background: linear-gradient(to right, #007bff, #6610f2); /* Gradient background */
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#roles-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    transform: rotate(25deg);
+    z-index: 0;
+}
+
+#roles-section h2 {
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+#roles-section .role h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+}
+
+#roles-section .role p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+#roles-section img {
+    max-width: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+#roles-section .image-wrapper {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#roles-section .roles-content {
+    position: relative;
+    z-index: 1;
+}
+
+#roles-section .btn {
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+#roles-section .btn:hover {
+    background: #fff;
+    color: #007bff;
+}
+
+
+
+
     </style>
 </head>
 
@@ -416,6 +487,36 @@ body {
 </section>
 
 
+
+<section id="roles-section" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+           
+            <div class="col-lg-5 text-center">
+                <div class="image-wrapper">
+                    <img src="me.jpg" alt="Daniel Muuo" class="img-fluid rounded-circle shadow-lg">
+                </div>
+            </div>
+            
+            <div class="col-lg-7">
+                <div class="roles-content">
+                    <h2 class="mb-4">My Roles</h2>
+                    <div class="role">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="text-muted">Dandevs Software Solutions</p>
+                    </div>
+                    <div class="role mt-4">
+                        <h3>CEO</h3>
+                        <p class="text-muted">Netlink WiFi Solutions</p>
+                    </div>
+                    <div class="role mt-4">
+                        <a href="https://www.linkedin.com/notifications/?filter=all" class="btn btn-outline-primary btn-lg mt-3" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- Skills Section -->
