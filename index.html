@@ -730,6 +730,53 @@ body {
         });
     </script>
 
+
+<script>
+        
+    document.addEventListener('DOMContentLoaded', function() {
+emailjs.init('tpyeDzJAncG7r0k5K'); // Replace with your EmailJS user ID
+
+const contactForm = document.querySelector('#contactModal form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = {
+            name: document.getElementById('contactName').value,
+            email: document.getElementById('contactEmail').value,
+            message: document.getElementById('contactMessage').value
+        };
+
+        console.log('Form Data:', formData);
+
+        emailjs.send('service_6imkfkm', 'template_5e7ps5d', formData)
+            .then((response) => {
+                console.log('EmailJS response:', response);
+                if (response.status === 200) {
+                    alert('Message sent successfully!');
+                    contactForm.reset();
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                    if (modal) {
+                        modal.hide();
+                    }
+                } else {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+    });
+} else {
+    console.error('Contact form not found');
+}
+});
+
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </body>
 
 </html>
